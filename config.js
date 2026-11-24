@@ -18,12 +18,4 @@ window.REVIEW_CONFIG = {
     "Value for money",
     "Easy registration"
   ],
-
-  // [value sent to the AI, label shown on the button]
-  languages: [
-    ["English", "English"],
-    ["Bahasa Melayu", "Bahasa Melayu"],
-    ["Chinese", "中文"],
-    ["Tamil", "தமிழ்"]
-  ]
 };
