@@ -51,20 +51,6 @@
     $("chips").appendChild(c);
   });
 
-  // Languages
-  LANGS.forEach(function (l) {
-    var c = document.createElement("button");
-    c.type = "button";
-    c.className = "chip";
-    c.textContent = l[1];
-    c.setAttribute("aria-pressed", String(l[0] === lang));
-    c.addEventListener("click", function () {
-      lang = l[0];
-      Array.prototype.forEach.call($("langs").children, function (x) { x.setAttribute("aria-pressed", "false"); });
-      c.setAttribute("aria-pressed", "true");
-    });
-    $("langs").appendChild(c);
-  });
 
   function chosen() { return HIGHLIGHTS.filter(function (t) { return picked[t]; }); }
   function joinList(a) {
